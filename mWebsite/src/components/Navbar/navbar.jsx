@@ -1,37 +1,32 @@
 import React from "react";
-import {
-    Nav,
-    NavLink,
-    Bars,
-    NavMenu,
-} from './NavbarElements';
+import { Nav, NavLink, Bars, NavMenu } from "./NavbarElements";
 
 const Navbar = () => {
-    return (
-        <>
-        <Nav>
-            <Bars />
+  return (
+    <>
+      <Nav>
+        <Bars />
 
-            <NavMenu>
-                <NavLink to='/floien' activeStyle>
-                    Fløien
-                </NavLink>
-                <NavLink to='/kikut' activeStyle>
-                    Kikut
-                </NavLink>
-                <NavLink to='/hardangerjokulen' activeStyle>
-                    Hardangerjøkulen
-                </NavLink>
-                <NavLink to='/ulrikken' activeStyle>
-                    Ulrikken
-                </NavLink>
-                <NavLink to='/lyderhorn' activeStyle>
-                    Lyderhorn
-                </NavLink>
-            </NavMenu>
-        </Nav>
-        </>
-    );
+        <NavMenu>
+          <NavLink to="/floien" activeStyle>
+            Fløien
+          </NavLink>
+          <NavLink to="/kikut" activeClassName="navbar__link--active">
+            Kikut
+          </NavLink>
+          <NavLink to="/hardangerjokulen" activeStyle>
+            Hardangerjøkulen
+          </NavLink>
+          <NavLink to="/ulrikken" activeStyle>
+            Ulrikken
+          </NavLink>
+          <NavLink to="/lyderhorn" activeStyle>
+            Lyderhorn
+          </NavLink>
+        </NavMenu>
+      </Nav>
+    </>
+  );
 };
 
 export default Navbar;

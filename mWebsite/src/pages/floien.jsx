@@ -1,37 +1,30 @@
 import React from "react";
-import Assets from '/Users/mool21/Documents/github/Gabler/mWebsite/mWebsite/public/assets/mRooms/f2.png'
-
+import bilde1 from "/assets/mRooms/f2.png";
+import bilde2 from "/assets/mRooms/fløien-1.png";
+import "./floien.css";
 
 const Floien = () => {
-    return (
-        <div
-        style={{
-            display: 'flex',
-            justifyContent: 'center',
-            height: '100vh'
-        }}
-        >
-            <h1>Floien</h1>
-
-            <div className="container"
-            
-            style={{
-                display: 'flex',
-                justifyContent: 'left'
-            }}
-            >
-
-
-            <img src={Assets} alt=""
-            style={{
-                height: '200px',
-                width: '200px',
-            }}
-            />
-
-            </div>
+  return (
+    <div>
+      <div className="container">
+        <h1 className="gok">Fløien</h1>
+        <div className="tekst-container">
+          <li className="text_li">
+            <h4>
+              Her ser dere hvordan Fløien ser ut, Fløien er et av de større
+              møterommene og blir blant annet brukt til onboardingsdager og
+              allmøter
+            </h4>
+            <p className="undertekst">Fløien har plass til 16 stk</p>
+          </li>
         </div>
-    );
+        <div className="img-container">
+          <img className="img-1" src={bilde1} alt="" />
+          <img className="img-1" src={bilde2} alt="" />
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default Floien;
